@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>UrbanCart | Online Store</title>
+    <link rel="stylesheet" href="bug.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                <a href="#">UrbanCart</a>
+            </div>
+
+            <button class="menu-btn" id="menuBtn">
+                ☰
+            </button>
+
+            <ul class="navlinks" id="navlinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button id="searchBtn">🔍</button>
+
+                <button id="cartBtn">
+                    🛒
+                    <span id="cartCount">0</span>
+                </button>
+            </div>
+
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- ================= HERO SECTION ================= -->
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+
+                <p class="hero-subtitle">
+                    Welcome to UrbanCart
+                </p>
+
+                <h1>
+                    Everything You Need,
+                    All in One Place
+                </h1>
+
+                <p>
+                    Discover quality fashion, footwear, accessories
+                    and everyday essentials at prices you'll love.
+                </p>
+
+                <a href="#shop" class="btn">
+                    Shop Now
+                </a>
+
+            </div>
+
+            <div class="hero-image">
+                <img src="images/hero.jpg" alt="UrbanCart products">
+            </div>
+
+        </section>
+
+
+        <!-- ================= CATEGORIES ================= -->
+        <section class="categories" id="categories">
+
+            <div class="section-heading">
+                <p>Explore</p>
+                <h2>Shop By Category</h2>
+            </div>
+
+            <div class="category-container">
+
+                <article class="category-card">
+                    <img src="images/mens-fashion.jpg" alt="Men's Fashion">
+                    <h3>Men's Fashion</h3>
+                    <button class="category-btn" data-category="fashion">
+                        Explore
+                    </button>
+                </article>
+
+                <article class="category-card">
+                    <img src="images/womens-fashion.jpg" alt="Women's Fashion">
+                    <h3>Women's Fashion</h3>
+                    <button class="category-btn" data-category="fashion">
+                        Explore
+                    </button>
+                </article>
+
+                <article class="category-card">
+                    <img src="images/shoes.jpg" alt="Footwear">
+                    <h3>Footwear</h3>
+                    <button class="category-btn" data-category="footwear">
+                        Explore
+                    </button>
+                </article>
+
+                <article class="category-card">
+                    <img src="images/bags.jpg" alt="Bags">
+                    <h3>Bags</h3>
+                    <button class="category-btn" data-category="bags">
+                        Explore
+                    </button>
+                </article>
+
+                <article class="category-card">
+                    <img src="images/watches.jpg" alt="Watches">
+                    <h3>Watches</h3>
+                    <button class="category-btn" data-category="watches">
+                        Explore
+                    </button>
+                </article>
+
+                <article class="category-card">
+                    <img src="images/electronics.jpg" alt="Electronics">
+                    <h3>Electronics</h3>
+                    <button class="category-btn" data-category="electronics">
+                        Explore
+                    </button>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FEATURED PRODUCTS ================= -->
+        <section class="products" id="shop">
+
+            <div class="section-heading">
+
+                <p>Our Collection</p>
+
+                <h2>Featured Products</h2>
+
+                <p>
+                    Discover some of our most popular products.
+                </p>
+
+            </div>
+
+
+            <!-- SEARCH -->
+            <div class="search-container">
+
+                <input
+                    type="search"
+                    id="searchInput"
+                    placeholder="Search for a product..."
+                >
+
+                <button id="searchProductBtn">
+                    Search
+                </button>
+
+            </div>
+
+
+            <!-- FILTER BUTTONS -->
+            <div class="filter-buttons">
+
+                <button class="filter-btn active" data-category="all">
+                    All
+                </button>
+
+                <button class="filter-btn" data-category="fashion">
+                    Fashion
+                </button>
+
+                <button class="filter-btn" data-category="footwear">
+                    Footwear
+                </button>
+
+                <button class="filter-btn" data-category="bags">
+                    Bags
+                </button>
+
+                <button class="filter-btn" data-category="watches">
+                    Watches
+                </button>
+
+                <button class="filter-btn" data-category="electronics">
+                    Electronics
+                </button>
+
+            </div>
+
+
+            <!-- PRODUCTS WILL BE GENERATED BY JAVASCRIPT -->
+            <div class="product-container" id="productContainer">
+
+                <!-- JavaScript will insert product cards here -->
+
+            </div>
+
+            <p id="noProducts" class="no-products">
+                No products found.
+            </p>
+
+        </section>
+
+
+        <!-- ================= SPECIAL OFFER ================= -->
+        <section class="special-offer">
+
+            <div class="offer-content">
+
+                <p>Limited Time Offer</p>
+
+                <h2>
+                    Weekend Sale
+                </h2>
+
+                <p>
+                    Get up to 20% off selected products.
+                </p>
+
+                <div class="countdown" id="countdown">
+
+                    <div>
+                        <span id="days">7</span>
+                        <small>Days</small>
+                    </div>
+
+                    <div>
+                        <span id="hours">24</span>
+                        <small>Hours</small>
+                    </div>
+
+                    <div>
+                        <span id="minutes"></span>60</span>
+                        <small>Minutes</small>
+                    </div>
+
+                    <div>
+                        <span id="seconds"></span>60</span>
+                        <small>Seconds</small>
+                    </div>
+
+                </div>
+
+                <a href="#shop" class="btn">
+                    Shop The Sale
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= WHY CHOOSE US ================= -->
+        <section class="features">
+
+            <div class="section-heading">
+
+                <p>Why UrbanCart?</p>
+
+                <h2>
+                    Why Choose Us
+                </h2>
+
+            </div>
+
+
+            <div class="feature-container">
+
+                <article class="feature">
+
+                    <div class="feature-icon">
+                        ✓
+                    </div>
+
+                    <h3>Quality Products</h3>
+
+                    <p>
+                        We carefully select products to give
+                        our customers quality and value.
+                    </p>
+
+                </article>
+
+
+                <article class="feature">
+
+                    <div class="feature-icon">
+                        🚚
+                    </div>
+
+                    <h3>Fast Delivery</h3>
+
+                    <p>
+                        Get your orders delivered conveniently
+                        and efficiently.
+                    </p>
+
+                </article>
+
+
+                <article class="feature">
+
+                    <div class="feature-icon">
+                        🔒
+                    </div>
+
+                    <h3>Secure Shopping</h3>
+
+                    <p>
+                        Enjoy a simple and secure shopping
+                        experience.
+                    </p>
+
+                </article>
+
+
+                <article class="feature">
+
+                    <div class="feature-icon">
+                        💬
+                    </div>
+
+                    <h3>Customer Support</h3>
+
+                    <p>
+                        Our support team is available to help
+                        with your questions.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ABOUT ================= -->
+        <section class="about" id="about">
+
+            <div class="about-image">
+
+                <img
+                    src="images/about.jpg"
+                    alt="UrbanCart shopping experience"
+                >
+
+            </div>
+
+
+            <div class="about-content">
+
+                <p>About UrbanCart</p>
+
+                <h2>
+                    Making Everyday Shopping Easier
+                </h2>
+
+                <p>
+                    UrbanCart is a modern online lifestyle store
+                    created to make shopping for everyday products
+                    simple and convenient.
+                </p>
+
+                <p>
+                    From fashion and footwear to accessories
+                    and electronics, we bring different products
+                    together in one convenient online store.
+                </p>
+
+                <a href="#contact" class="btn">
+                    Learn More
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CUSTOMER REVIEWS ================= -->
+        <section class="reviews">
+
+            <div class="section-heading">
+
+                <p>Customer Feedback</p>
+
+                <h2>
+                    What Our Customers Say
+                </h2>
+
+            </div>
+
+
+            <div class="review-container">
+
+                <article class="review-card">
+
+                    <img
+                        src="images/customer1.jpg"
+                        alt="Customer"
+                    >
+
+                    <h3>Smartpeter Blinks</h3>
+
+                    <div class="rating">
+                        ★★★★★
+                    </div>
+
+                    <p>
+                        The sneakers arrived exactly as described.
+                        The quality was great and delivery was fast.
+                    </p>
+
+                </article>
+
+
+                <article class="review-card">
+
+                    <img
+                        src="images/customer2.jpg"
+                        alt="Customer"
+                    >
+
+                    <h3>Mr Isreal Boboye</h3>
+
+                    <div class="rating">
+                        ★★★★★
+                    </div>
+
+                    <p>
+                        I really enjoyed my shopping experience.
+                        The website was easy to use and my order
+                        arrived safely.
+                    </p>
+
+                </article>
+
+
+                <article class="review-card">
+
+                    <img
+                        src="images/customer3.jpg"
+                        alt="Customer"
+                    >
+
+                    <h3>Mr Olukoya Kolade</h3>
+
+                    <div class="rating">
+                        ★★★★☆🌟
+                    </div>
+
+                    <p>
+                        Good products and reasonable prices.
+                        I'll definitely shop here again.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= NEWSLETTER ================= -->
+        <section class="newsletter">
+
+            <div class="newsletter-content">
+
+                <p>Stay Updated</p>
+
+                <h2>
+                    Get 10% Off Your First Order
+                </h2>
+
+                <p>
+                    Subscribe to our newsletter to receive
+                    new product updates and special offers.
+                </p>
+
+
+                <form id="newsletterForm">
+
+                    <input
+                        type="email"
+                        id="newsletterEmail"
+                        placeholder="Enter your email"
+                    >
+
+                    <button type="submit">
+                        Subscribe
+                    </button>
+
+                </form>
+
+                <p id="newsletterMessage"></p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CONTACT ================= -->
+        <section class="contact" id="contact">
+
+            <div class="section-heading">
+
+                <p>Get In Touch</p>
+
+                <h2>
+                    Contact Us
+                </h2>
+
+            </div>
+
+
+            <div class="contact-container">
+
+                <div class="contact-info">
+
+                    <h3>
+                        We'd Love To Hear From You
+                    </h3>
+
+                    <p>
+                        Have a question about an order or one
+                        of our products? Send us a message.
+                    </p>
+
+
+                    <div class="contact-item">
+
+                        <h4>Email</h4>
+
+                        <p>
+                            support@urbancart.com
+                        </p>
+
+                    </div>
+
+
+                    <div class="contact-item">
+
+                        <h4>Phone</h4>
+
+                        <p>
+                            +234 7065009396
+                        </p>
+
+                    </div>
+
+
+                    <div class="contact-item">
+
+                        <h4>Location</h4>
+
+                        <p>
+                            Abuja, Nigeria
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <form class="contact-form" id="contactForm">
+
+                    <div class="form-group">
+
+                        <label for="name">
+                            Full Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Enter your name"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Enter your email"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="phone">
+                            Phone Number
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="Enter your phone number"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="subject">
+                            Subject
+                        </label>
+
+                        <input
+                            type="text"
+                            id="subject"
+                            name="subject"
+                            placeholder="Enter subject"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="message">
+                            Message
+                        </label>
+
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="6"
+                            placeholder="Write your message..."
+                        ></textarea>
+
+                    </div>
+
+
+                    <button type="submit" class="btn">
+                        Send Message
+                    </button>
+
+                    <p id="formMessage"></p>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= SHOPPING CART ================= -->
+    <aside class="cart" id="cart">
+
+        <div class="cart-header">
+
+            <h2>
+                Your Cart
+            </h2>
+
+            <button id="closeCart">
+                ✕
+            </button>
+
+        </div>
+
+
+        <div class="cart-items" id="cartItems">
+
+            <!-- JavaScript will add cart items here -->
+
+        </div>
+
+
+        <div class="cart-summary">
+
+            <div class="summary-row">
+
+                <span>
+                    Subtotal
+                </span>
+
+                <span id="cartSubtotal">
+                    ₦0
+                </span>
+
+            </div>
+
+
+            <div class="summary-row">
+
+                <span>
+                    Delivery
+                </span>
+
+                <span id="deliveryFee">
+                    ₦0
+                </span>
+
+            </div>
+
+
+            <div class="summary-row total">
+
+                <span>
+                    Total
+                </span>
+
+                <span id="cartTotal">
+                    ₦0
+                </span>
+
+            </div>
+
+
+            <button class="checkout-btn" id="checkoutBtn">
+                Checkout
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+
+        <div class="footer-container">
+
+            <div class="footer-column">
+
+                <h2>
+                    UrbanCart
+                </h2>
+
+                <p>
+                    Your convenient online store for fashion,
+                    accessories, electronics and everyday essentials.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>
+                    Quick Links
+                </h3>
+
+                <ul>
+
+                    <li>
+                        <a href="#home">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="#shop">Shop</a>
+                    </li>
+
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>
+                    Customer Service
+                </h3>
+
+                <ul>
+
+                    <li>
+                        <a href="#">FAQs</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Delivery Information</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Returns</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Privacy Policy</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="footer-column">
+              <h3>Follow Us</h3>
+              <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">TikTok</a>
+                <a href="#">Twitter</a>
+                <a href="#">Snapchat</a>
+                
+              </div>
+            </div>
+            </div>
+            <div class="footer-bottom">
+              <p>© 2026 UrbanCart.All Rights Reserved</p>
+            </div>
+            </footer>
+            <script src="bug.js"></script>
+            </body>
+            </html>
