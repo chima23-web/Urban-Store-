@@ -7,7 +7,7 @@ const products = [
         name: "Classic Sneakers",
         category: "footwear",
         price: 35000,
-        image: "image/Classic-sneakers.webp",
+        image: "Classic-sneakers.webp",
         rating: 5,
         description: "Comfortable sneakers suitable for everyday activities."
     },
@@ -17,7 +17,7 @@ const products = [
         name: "Leather Backpack",
         category: "bags",
         price: 28500,
-        image: "image/arnos-backpack-392.webp",
+        image: "arnos-backpack-392.webp",
         rating: 4,
         description: "A stylish and durable backpack for everyday use."
     },
@@ -27,7 +27,7 @@ const products = [
         name: "Smart Watch",
         category: "watches",
         price: 45000,
-        image: "image/OIP (17).webp",
+        image: "OIP (17).webp",
         rating: 5,
         description: "A modern smartwatch designed for everyday convenience."
     },
@@ -37,7 +37,7 @@ const products = [
         name: "Casual T-Shirt",
         category: "fashion",
         price: 15000,
-        image: "image/T-shirt.jpg",
+        image: "T-shirt.jpg",
         rating: 4,
         description: "A comfortable casual shirt for everyday wear."
     },
@@ -47,7 +47,7 @@ const products = [
         name: "Wireless Headphones",
         category: "electronics",
         price: 32000,
-        image: "image/Wireless-Headphones.jpg",
+        image: "Wireless-Headphones.jpg",
         rating: 5,
         description: "Wireless headphones with clear sound and comfortable fit."
     },
@@ -57,7 +57,7 @@ const products = [
         name: "Crossbody Bag",
         category: "bags",
         price: 22000,
-        image: "image/crossbody-bag.jpg",
+        image: "crossbody-bag.jpg",
         rating: 4,
         description: "A compact and stylish bag for everyday activities."
     },
@@ -67,7 +67,7 @@ const products = [
         name: "Denim Jacket",
         category: "fashion",
         price: 40000,
-        image: "image/OIP (18).webp",
+        image: "OIP (18).webp",
         rating: 5,
         description: "A fashionable denim jacket that works with different outfits."
     },
@@ -77,7 +77,7 @@ const products = [
         name: "Running Shoes",
         category: "footwear",
         price: 38000,
-        image: "image/OIP (19).webp",
+        image: "OIP (19).webp",
         rating: 4,
         description: "Lightweight running shoes designed for comfort."
     },
@@ -86,7 +86,7 @@ const products = [
         name: "Accessory",
         category: "Power Bank",
         price: 40000,
-        image: "image/powerbank.jpg",
+        image: "powerbank.jpg",
         rating: 5,
         description: "A 40000 watts quality battery."
 
@@ -96,7 +96,7 @@ const products = [
         name: "Condom Boxers",
         category: "Men's Underwear",
         price: 10000,
-        image: "image/condom-boxers.jpg",
+        image: "condom-boxers.jpg",
         rating: 5,
         description: "Elastic band boxer durable for a year."
     },
@@ -105,7 +105,7 @@ const products = [
         name: "Rounded White Collar Shirt",
         category: "Fashion",
         price: 25000,
-        image: "image/rounded-white-collar.jpg",
+        image: "rounded-white-collar.jpg",
         rating: 5,
         description: "A well branded white roundneck polo shirt with a quality."
     },
@@ -114,7 +114,7 @@ const products = [
         name: "Multicolored Baggy Jeans",
         category: "Men's Fashion",
         price: 40000,
-        image: "image/baggy-jean.jpg",
+        image: "baggy-jean.jpg",
         rating: 5,
         description: " A well designed baggy jean."
     },
@@ -123,7 +123,7 @@ const products = [
         name: "Facecap",
         category: "Men's Cap",
         price: 20000,
-        image: "image/men-facecap.webp",
+        image: "men-facecap.webp",
         rating: 5,
         description: "A comfortable stylish cap for the head."
     },
@@ -132,7 +132,7 @@ const products = [
         name: "Palm Slippers",
         category: "Footwear",
         price: 30000,
-        image: "image/palm-slippers.jpg",
+        image: "palm-slippers.jpg",
         rating: 4,
         description: "A high quality made comfortable palm  for the foot."
 
@@ -142,7 +142,7 @@ const products = [
         name: "Leather Wallet",
         category: "Accessories",
         price: 25000,
-        image: "image/leather-wallet.jpg",
+        image: "leather-wallet.jpg",
         rating: 5,
         description: "A genuine leather wallet with multiple card slots."
 
@@ -152,7 +152,7 @@ const products = [
         name: "Sunglasses",
         category: "Acessories",
         price: 30000,
-        image: "image/sunglasses.webp",
+        image: "sunglasses.webp",
         rating: 4,
         description: "Stylish sunglasses with UV protection for everyday wear."
 
@@ -162,7 +162,7 @@ const products = [
         name: "Bluetooth Speaker",
         category: "electronics",
         price: 40000,
-        image: "image/bluetooth-speaker.jpg",
+        image: "bluetooth-speaker.jpg",
         rating: 5,
         description: "A portable Bluetooth speaker with high-quality sound."
     },
@@ -171,7 +171,7 @@ const products = [
     name: "Fitness Tracker",
     category: "electronics",
     price: 35000,
-    image: "image/fitness-tracker.jpg",
+    image: "fitness-tracker.jpg",
     rating: 4,
     description: "A fitness tracker that matters."
 },
@@ -180,7 +180,7 @@ const products = [
     name: "Google Pixel 10 Pro XL -16G",
     category: "electronics",
     price: 1750000,
-    image: "image/googel-pixel.jpg",
+    image: "googel-pixel.jpg",
     rating: 5,
     description: "A higly rated phone with a 16GB RAM and 1TB ROM."
 },
@@ -189,7 +189,7 @@ const products = [
     name: "Riggs London BODY SPRAY (Power ) 250ML",
     category: "Fragrances && Perfumes",
     price: 6000,
-    image: "image/riggs-london.jpg",
+    image: "riggs-london.jpg",
     rating: 3,
     description: "A body spray with a 24hr smell."
 
@@ -200,7 +200,7 @@ const products = [
     name: "Karis All Day Fresh Body Deodorant Spray - 200ML (Pack)",
     category: "Fragrances && Perfumes",
     price: 13000,
-    image: "image/karis.jpg",
+    image: "karis.jpg",
     rating: 4,
     description: "A 48hr active protection: offers long-lasting odour protection to keep you feeling fresh throughout the day."
 },
@@ -209,7 +209,7 @@ const products = [
     name: "Old Spice GentleMan's Total Body Deodorant Nitro Body Spray",
     category: "Fragrances && Perfumes",
     price: 18999,
-    image: "image/Old_Spice_2.webp",
+    image: "Old_Spice_2.webp",
     rating: 5,
     description: "Delivers a captivating and long-lasting aroma."
 },
@@ -218,7 +218,7 @@ const products = [
     name: "Sugar Green Eau De Perfume Long Lasting Spray 30ML",
     category: "Fragrances && Perfumes",
     price: 6649,
-    image: "image/sugar-green.jpg",
+    image: "sugar-green.jpg",
     rating: 4,
     description: "Leaves a pleasant, refreshing scent trail throughout the day."
 },
@@ -227,7 +227,7 @@ const products = [
     name: "Storm Elixir (OUR ,MAGIC) Perfumed Deodorant Body Spray",
     category: "Fragrances && Perfumes",
     price: 25000,
-    image: "image/storm-elixir.jpg",
+    image: "storm-elixir.jpg",
     rating: 5,
     description: "Good value for money Long lasting fragrance affordable Exiotic scentLast all day."
 },
@@ -236,7 +236,7 @@ const products = [
     name: "Iphone 17 pro max",
     categories: "electronics",
     price: 1940000,
-    image: "image/apple.jpg",
+    image: "apple.jpg",
     rating: 5,
     description: " A apple phone with a operating system -IOS 26."
 },
@@ -245,7 +245,7 @@ const products = [
     name: "Iphone 17 Air",
     categories: "electronis",
     price: 1430000,
-    image: "image/apple-2.jpg",
+    image: "apple-2.jpg",
     rating: 4,
     description: "The thinnest iphone ever, with the power of a pro chip inside."
 
@@ -255,7 +255,7 @@ const products = [
     name: "Samsung Galaxy S26 ultra",
     categories: "electronics",
     price: 2400000,
-    image: "image/samsung-galaxy.jpg",
+    image: "samsung-galaxy.jpg",
     rating: 5,
     description: "Samsung operating system with a 200MP camera and front camera 12MP."
 },
@@ -264,7 +264,7 @@ const products = [
     name: "Samsung Galaxy S26",
     categories: "electronics",
     price: 105000,
-    image: "image/samsung-galaxy-26.jpg",
+    image: "samsung-galaxy-26.jpg",
     rating: 4,
     description: "A 5000mAH Battery all day power."
 },
@@ -273,7 +273,7 @@ const products = [
     name: "Apple MacBook air m5 16/512GB midnight black Laptop",
     categories: "electronics",
     price: 1955000,
-    image: "image/apple-macbook.jpg",
+    image: "apple-macbook.jpg",
     rating: 5,
     description: "M5 Chip: Powered by a 10-core CPU with four performance cores and six efficiency cores."
 },
@@ -282,7 +282,7 @@ const products = [
     name: "HP VICTUS 15 GAMING 13TH GEN INTEL CORE I5 16GB RAM Laptop",
     categories: "electronics",
     price: 1550000,
-    image: "image/hp-laptop.jpg",
+    image: "hp-laptop.jpg",
     rating: 5,
     description: "Processor 13TH Gen, Intel Core i5 up to 4.6gHz."
 }
@@ -306,7 +306,7 @@ const cartCount =
     document.getElementById("cartCount");
 
 const cartItems =
-    document.getElementById(cartItems);
+    document.getElementById("cartItems");
    const cartSubtotal =
     document.getElementById("cartSubtotal");
 
