@@ -18,7 +18,7 @@ const products = [
         name: "Leather Backpack",
         category: "bags",
         price: 28500,
-        image: "images/bags.jpg",
+        image: "image/OIP (14).webp",
         rating: 4,
         description: "A stylish and durable backpack for everyday use."
     },
@@ -28,7 +28,7 @@ const products = [
         name: "Smart Watch",
         category: "watches",
         price: 45000,
-        image: "images/watches.jpg",
+        image: "image/OIP (15).webp",
         rating: 5,
         description: "A modern smartwatch designed for everyday convenience."
     },
@@ -38,7 +38,7 @@ const products = [
         name: "Casual T-Shirt",
         category: "fashion",
         price: 15000,
-        image: "images/mens-fashion.jpg",
+        image: "image/OIP (17).webp",
         rating: 4,
         description: "A comfortable casual shirt for everyday wear."
     },
